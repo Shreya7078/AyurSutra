@@ -38,7 +38,7 @@ const DoctorDashboardPage = () => {
         const storedId = localStorage.getItem("userId");
         const storedType = localStorage.getItem("userType");
 
-        // 🛑 Route guard: only allow logged-in doctors
+        // 🛑 Route guard: only allow logged-in doctorss
         if (!storedId || storedType !== "doctor") {
           navigate("/login");
           return;
